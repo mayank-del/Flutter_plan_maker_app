@@ -33,8 +33,10 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Mayank"),
       ),
-      body: Column(
+      body:SingleChildScrollView(
+      child: Column(
         //mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Container(
               width: double.infinity,
@@ -45,6 +47,7 @@ class MyHomePage extends StatelessWidget {
               UserTransaction(),
         ],
       ),
+    ),
     );
   }
 }
